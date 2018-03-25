@@ -6,14 +6,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
+    if (message.content === 'BOT') {
+    	message.channel.send('HERE!');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'bing') {
-    	message.reply('BONG!');
+    if (message.content === 'ping') {
+    	message.reply('PONG! HAHAHAH MA BOI');
   	}
 });
 
