@@ -12,8 +12,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'bing') {
-    	message.reply('BONG!');
+    if (message.content === '??invite') {
+    	message.reply('ttps://discordapp.com/oauth2/authorize?client_id=427502556059795468&scope=bot&permissions=8');
   	}
 });
 
