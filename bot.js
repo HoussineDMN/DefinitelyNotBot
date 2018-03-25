@@ -19,3 +19,9 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '??invite') {
+    	message.reply('https://discordapp.com/oauth2/authorize?client_id=427502556059795468&scope=bot&permissions=8');
