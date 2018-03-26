@@ -103,7 +103,7 @@ client.on('message', message => {
     }
 });
 client.on('message', msg => {
-  if (msg.content === '??support') {
+  if (msg.content === '??join.support') {
     msg.reply('https://discord.gg/a8Xe9q8');
   }
 });
