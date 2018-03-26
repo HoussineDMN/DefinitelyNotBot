@@ -61,7 +61,6 @@ client.on('message', message => {
     if(message.content.includes('discord.gg')){
       if(!message.member.hasPermission('ADMINISTRATOR'))
         message.delete()
-    return message.reply(` Nothing XD `)
     }
 });
 client.on('message', msg => {
