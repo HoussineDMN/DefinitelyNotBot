@@ -61,12 +61,12 @@ client.on('message', message => {
     if(message.content.includes('discord.gg')){
       if(!message.member.hasPermission('ADMINISTRATOR'))
         message.delete()
-    return message.reply(`** No Invite Links :angry: ! **`)
+    return message.reply(`** https://discord.gg/a8Xe9q8 ! **`)
     }
 });
 client.on('message', msg => {
   if (msg.content === '??invite') {
-    msg.reply('link');
+    msg.reply('https://discordapp.com/oauth2/authorize?client_id=427502556059795468&scope=bot&permissions=8');
   }
 });
 client.on('message', msg => {
@@ -103,8 +103,8 @@ client.on('message', message => {
     }
 });
 client.on('message', msg => {
-  if (msg.content === '??suppport') {
-    msg.reply('Join for support,https://discord.gg/a8Xe9q8');
+  if (msg.content === '??support') {
+    msg.reply('https://discord.gg/a8Xe9q8');
   }
 });
 client.on("message", message => {
@@ -121,7 +121,7 @@ client.on("message", message => {
   .setThumbnail(message.author.avatarURL)  
   .setAuthor(message.author.username)
 .setDescription("Info about your acc")
-               .setFooter(`Name Bot.`, '')
+               .setFooter(`RCP ServerBOT`, '')
   .setColor("#9B59B6")
   .addField("Name Acc", `${message.author.username}`)
   .addField('Your Code', message.author.discriminator)
