@@ -17,11 +17,11 @@ client.on('message', message => {
   	}
 });
 
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
-
 // THIS FOR ACTIVITY PLACE
 bot.user.setActivity("??help | in " + bot.guilds.size + " servers") 
 
 // GAME AND STREAMING
 bot.user.setGame('??invite') // Here for game statues testing.
+
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
