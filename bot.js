@@ -21,7 +21,7 @@ client.on('message', msg => {
 });
 if (message.content === '??help') {
               var embed  = new Discord.RichEmbed()
-                .addField("**NEED SUPPORT**" ,":wrench: تم اضافه منع الروابط :wrench: ")
+                .addField("**NEED SUPPORT**" ,":wrench: SUPPORT AND COMMENDS :wrench: ")
                 .addField("broadcast (bc)" ,"**using:** ``??broadcast <message> , ??bc <message>``")
                 .addField("**BAN**" ,"**using:** ``??ban <someone>``")
                 .addField("**KICK**" ,"**using:** ``??kick <someone> ``")
@@ -71,7 +71,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
   if (msg.content === '??help') {
-    msg.reply(':envelope: | تم ارسال الرساله في الخاص');
+    msg.reply(':envelope: | Check your DMs');
   }
 });
 client.on("message", message => {
@@ -79,15 +79,15 @@ client.on("message", message => {
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
-   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('⚠ | **ليس لديك صلاحيات**');
+   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('⚠ | **u dont have permessions**');
         var msg;
         msg = parseInt();
       
       message.channel.fetchMessages({limit: msg}).then(messages => message.channel.bulkDelete(messages)).catch(console.error);
       message.channel.sendMessage("", {embed: {
-        title: "Done | تــم",
+        title: "Done",
         color: 0x06DF00,
-        description: "تم مسح الرسائل بنجاح",
+        description: "Cleaned Succesfully",
         footer: {
           text: "Name Bot."
         }
@@ -104,7 +104,7 @@ client.on('message', message => {
 });
 client.on('message', msg => {
   if (msg.content === '??suppport') {
-    msg.reply('السيرفر للمساعده,https://discord.gg/a8Xe9q8');
+    msg.reply('Join for support,https://discord.gg/a8Xe9q8');
   }
 });
 client.on("message", message => {
@@ -120,14 +120,14 @@ client.on("message", message => {
      let embed = new Discord.RichEmbed()
   .setThumbnail(message.author.avatarURL)  
   .setAuthor(message.author.username)
-.setDescription("معلومات عن الحــساب")
+.setDescription("Info about your acc")
                .setFooter(`Name Bot.`, '')
   .setColor("#9B59B6")
-  .addField("اســـم الحســاب", `${message.author.username}`)
-  .addField('كود الحساب الخاص', message.author.discriminator)
-  .addField("الرقـــم الشـــخصي", message.author.id)
-  .addField('بــــوت', message.author.bot)
-  .addField("تاريخ التسجيل", message.author.createdAt)
+  .addField("Name Acc", `${message.author.username}`)
+  .addField('Your Code', message.author.discriminator)
+  .addField("ID Personel", message.author.id)
+  .addField('BOT', message.author.bot)
+  .addField("Date Join", message.author.createdAt)
      
      
   message.channel.sendEmbed(embed);
@@ -162,12 +162,12 @@ client.on("guildMemberRemove", member => {
 );
 client.on("message", (message) => {
     if (message.content.startsWith("??ban ")) {
-      if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('⚠ ماعندك الصلاحيات');
+      if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('⚠ You Dont have permessions');
         var member= message.mentions.members.first();
         member.ban().then((member) => {
-            message.channel.send(member.displayName + " لقد تم طرده بنجاح :wave: ");
+            message.channel.send(member.displayName + " Banned Succesfully :wave: ");
         }).catch(() => {
-            message.channel.send(":x: هناك خطاء حاول مره أخرى:x: ");
+            message.channel.send(":x: Something wrong Try again:x: ");
         });
     }
 });
