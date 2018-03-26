@@ -19,3 +19,5 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
+
+bot.user.setActivity("??help | in " + bot.guilds.size + " servers") 
