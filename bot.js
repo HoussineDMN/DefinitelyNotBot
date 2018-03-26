@@ -19,7 +19,7 @@ client.on('message', msg => {
     msg.reply('Pong!');
   }
 });
-if (message.content === '$help') {
+if (message.content === '??help') {
               var embed  = new Discord.RichEmbed()
                 .addField("**LINKS**" ,":no_entry_sign: تم اضافه منع الروابط :no_entry_sign: ")
                 .addField("broadcast (bc)" ,"**الاستخدام:** ``$broadcast <الرساله> , $bc <الرساله>``")
