@@ -15,8 +15,8 @@ client.on('message', message => {
     }
 
 client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
+  if (msg.content === '??support') {
+    msg.reply('https://discord.gg/a8Xe9q8');
   }
 });
 if (message.content === '??help') {
