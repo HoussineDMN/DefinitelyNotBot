@@ -15,8 +15,8 @@ client.on('message', message => {
     }
 
 client.on('message', msg => {
-  if (msg.content === '??support') {
-    msg.reply('https://discord.gg/a8Xe9q8');
+  if (msg.content === '??pizza') {
+    msg.reply('u got :pizza: still hungry? i guess not');
   }
 });
 if (message.content === '??help') {
