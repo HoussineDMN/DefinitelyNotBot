@@ -61,7 +61,7 @@ client.on('message', message => {
     if(message.content.includes('discord.gg')){
       if(!message.member.hasPermission('ADMINISTRATOR'))
         message.delete()
-    return message.reply(` https://discord.gg/a8Xe9q8 ! `)
+    return message.reply(` Nothing XD `)
     }
 });
 client.on('message', msg => {
